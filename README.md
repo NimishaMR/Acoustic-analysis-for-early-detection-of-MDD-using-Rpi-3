@@ -25,4 +25,47 @@ Spectrogram analysis provides a much better understanding of acoustic features l
 
 A spectrogram tells you how much energy (PSD) there is at a given frequency at a given time Frequency: Represents how many times per second an element producing sound vibrates. It has three axes, Frequency, Time and Power. Each sound, no matter how simple or complicated, can be split up into frequencies, just as a picture can be split up into pixels
 
-<img src="Media/spectrogram.JPEG" width=400> 
+<img src="Media/spectrogram.jpeg" width=400> 
+
+**LSTM Model implemented to predict 7 emotions**
+
+LSTM  stands for Long Short Term Memory which is a subcategory of Recurrent Neural Networks . This is beneficial becuase it has the capability to identify semantic reevence in a long sentence rather than just a small one.
+
+LSTM has feedback connections, i.e., it can process the entire sequence of data, apart from single data points such as images. The LSTM model makes.
+ use of gates to enable long term memory feature.
+
+ <img src="Media/lstm.png" width=400> 
+
+ **Rpi 3 to collect real time voice data as a test dataset for our model**
+
+The Raspberry Pi is a series of credit card sized single-board computers. The main purpose of using Raspberry Pi 3 with a LM393 sound sensor module is to use the DSP Processor on an integrated level. 
+
+The application of Raspberry Pi 3 in speech signal processing is to take the speech signal with a lot of redundancy and compress it to remove background noise before transmitting it. The setup has been interfaced using Python Libraries such as GPIO and RPi. This is further processed on MATLAB and then passed to the Machine Learning model where Python Librosa Library is used. The features captured in MATLAB are histogram, spectrogram, MFCC coefficient and the frequency and time domain axes plots. These have been plotted.
+
+**Dataset information**
+
+We have made use of 2 different datasets, one is the DAIC-WOZ database from the **University of Southern California** .
+This can be obtained by filling an application at their webiste : https://dcapswoz.ict.usc.edu/
+
+Participants were interviewed by Ellie, a virtual visitor, for a total of 189 interactions. The audio files and facial features of the participants in each session were recorded. The duration of each interaction ranged from 7 to 33 min (an average of 16 min). Before the conversation with Ellie, each respondent filled out a questionnaire about mental state (PHQ-8, Kroenke et al., 2008). The binary classification of depression and non-depression was carried out based on the PHQ-8 score, used as the labels for the respondents.
+
+
+The second database used is the RAVDESS dataset: which contains 1440 files: 60 trials per actor x 24 actors = 1440. The RAVDESS contains 24 professional actors (12 female, 12 male), vocalizing two lexically matched statements in a neutral North American accent. Speech emotions include calm, happy, sad, angry, fearful, surprised, and disgusted expressions. Each expression is produced at two levels of emotional intensity (normal, strong), with an additional neutral expression.
+
+**Preprocessing using MATLAB**
+
+Here we demonstrate how spectrograms can be obtained from the DAIC dataset voice samples and the observations we have deduced from each of the different degrees of depression mentioned in Table I.The steps that were needed to obtain the MFCC from the audio dataset were Pre Emphasis(framing, windowing), Fast Fourier Transform,  Mel Filter Bank, Log(), DCT/IFFT, and Mel Cepstrum.MATLAB code was developed for the same. 
+
+**ML Model development**
+
+The spectral analysis of different emotions depicted by males and females in the RAVDESS dataset have been made. Later we pass the voice samples through the LSTM model which will accurately predict the emotion depicted in the voice. This model is also validated using real people’s voice samples collected and processed using Raspberry Pi 3. The spectrograms and Frequency and time domain plots are shown in the results file.
+
+**The MATLAB code , LSTM model code and the results have been provoided in their repsective folders in this repository**
+
+**This work has been puiblished as a research paper titled "Real Time Speech Emotion Recognition using LSTM and Raspberry Pi" in the The 7th International Conference on 'Computational Systems and Information Technology for Sustainable Solutions 2023 "**
+
+The linkto the paper is here: 
+ 
+
+
+
