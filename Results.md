@@ -1,4 +1,4 @@
-![image](https://github.com/NimishaMR/Speech-processing-using-LSTM-RPi3/assets/90333414/17a5db90-06ef-46ae-8bce-b41ee6dfea07)This file has the results of our project.
+This file has the results of our project.
 
 Here are the spetcrographical analysis of:
 
