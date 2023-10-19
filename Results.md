@@ -2,11 +2,11 @@ This file has the results of our project.
 
 Here are the spetcrographical analysis of:
 
-**severly depressed individual**
+**Severly depressed individual**
 
 <img src="Media/spectminor.png" width=400>
 
-**not significantly depressed individual**
+**Not significantly depressed individual**
 
 <img src="Media/spectmajor.png" width=400> 
 
@@ -16,14 +16,14 @@ Here are the spetcrographical analysis of:
 
 **Nueral layers in LSTM Model with 100 epochs**
 
-<img src="Media/lastmlayers.png" width=400>
+<img src="Media/lstmlayers.png" width=400>
 
 
 **Loss curve**
 
 <img src="Media/losscurve.png" width=400>
 
-**classification report**
+**Classification report**
 
 <img src="Media/report.png" width=400>
 
