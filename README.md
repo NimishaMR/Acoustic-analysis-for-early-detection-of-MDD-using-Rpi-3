@@ -34,7 +34,7 @@ LSTM  stands for Long Short Term Memory which is a subcategory of Recurrent Neur
 LSTM has feedback connections, i.e., it can process the entire sequence of data, apart from single data points such as images. The LSTM model makes.
  use of gates to enable long term memory feature.
 
- <img src="Media/lstm.png" width=400> 
+ <img src="Media/lstmlayers.png" width=400> 
 
  **Rpi 3 to collect real time voice data as a test dataset for our model**
 
